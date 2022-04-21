@@ -13,30 +13,24 @@
 
 
 
-.container {
+.contenedor {
     display: grid;
     width: 100%;
 
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 6rem auto 6rem;
+    grid-template-rows: 3rem auto 6rem;
 
     grid-template-areas: "header   header"
         "sec     sec"
         "footer   footer";
 }
 
-.container div {
+.contenedor div {
     color: white;
     padding: 2px;
 }
 
 .head {
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(31,31,42,1) 50%, rgba(53,32,85,1) 100%);
-    font-size: medium;
-    font-weight: 500;
-    color: aliceblue;
-    padding: 1rem 0;
-    box-shadow: 0px 0px 30px rgba(109, 109, 109, 0.3);
     grid-area: header;
 }
 
@@ -46,7 +40,7 @@
 }
 
 .foot {
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(31,31,42,1) 50%, rgba(53,32,85,1) 100%);
+    background: linear-gradient(to right, #000000, #1c0a1c);
     font-size: small;
     font-weight: 400;
     color: aliceblue;
@@ -54,17 +48,8 @@
     grid-area: footer;
 }
 
-nav {
-    display: flex;
-
-}
-
-nav ul {
-    display: flex;
-    justify-content: space-evenly;
-    height: 50px;
-    width: 80%;
-    align-items: center;
+.navbar {
+    background: linear-gradient(to right, #000000, #1c0a1c);
 }
 
 .rowSector {
@@ -116,10 +101,6 @@ nav ul {
     width: 100%;
     align-items: center;
     padding: 2px;
-}
-
-.logoStyle {
-    padding-left: 25%;
 }
 
 main {
@@ -204,18 +185,6 @@ form input[type="email"] {
     --link-2: rgb(255, 255, 255);
 }
 
-#styleLink {
-    padding: 0 0.25rem;
-    margin: 0 -0.25rem;
-    box-shadow: inset 0 0 0 0 var(--link-1);
-    transition: color 0.3s ease-in-out, box-shadow 0.5s ease-in-out;
-    color: var(--link-2);
-}
-
-#styleLink:hover {
-    color: white;
-    box-shadow: inset 100px 0 0 0 var(--link-1);
-}
 
 .animation-box {
     animation: slide-up 0.9s cubic-bezier(0.65, 0, 0.35, 1) 
@@ -234,8 +203,8 @@ form input[type="email"] {
 
 @media only screen and (min-width: 320px) and (max-width: 844px) and (orientation: portrait) {
 
-    .container {
-        grid-template-rows: 7rem auto 6rem;
+    .contenedor {
+        grid-template-rows: 2rem auto 6rem;
     }
 
     .gridContainer {
@@ -245,15 +214,6 @@ form input[type="email"] {
     .gridSector {
         height: 150px;
         width: 150px;
-    }
-
-    nav ul {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        width: 80%;
-        align-items: center;
-        height: 80px;
     }
 
     .rowSector {
