@@ -2,116 +2,236 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/93feaf6021.js" crossorigin="anonymous"></script>
-    <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" a href="./assets/css/style.css">
-    <link rel="icon" type="image/png" sizes="16x16" href="//res.cloudinary.com/hdsqazxtw/image/upload/v1558445734/favicon-16x16_glx69e.png">
-    <title>Index</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/93feaf6021.js" crossorigin="anonymous"></script>
+  <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" a href="./assets/css/style.css">
+  <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon.png">
+  <title>Index</title>
 </head>
 
 <body>
-    <section class="contenedor">
+  <section class="contenedor">
+    <!-- Inicio Header -->
+    <header class="head">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="./assets/images/logo_ejemplo.png" alt="Logo de la empresa" height="36">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item"><a class="nav-link active" aria-current="page">INICIO</a></li>
+              <li class="nav-item"><a class="nav-link" href="./pages/servicios.html">SERVICIOS</a></li>
+              <li class="nav-item"><a class="nav-link" href="./pages/equipo.html">EQUIPO</a></li>
+              <li class="nav-item"><a class="nav-link" href="./pages/porfolio.html">PORFOLIO</a></li>
+              <li class="nav-item"><a class="nav-link" href="./pages/contacto.html">CONTACTO</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Fin Header -->
+    <main class="sector">
+      <div class="animation-box">
+        <!-- Titulo Pagina -->
+        <section>
+          <div class="container">
+            <h2 class="textwhite">LLEVAMOS TU</h2>
+            <h2 class="textblack">NEGOCIO</h2>
+            <h2 class="textwhite">AL SIGUIENTE</h2>
+            <h2 class="textblack">NIVEL</h2>
+          </div>
+        </section>
+        <!-- Subtitulo de Pagina -->
+        <section class="text-center">
+          <img class="imgLamp" src="./assets/images/lamp_image_index.png">
+          <p>Somos una agencia de marketing y comunicación dedicada a crear soluciones</p>
+          <p>integrales e innovadoras para posicionar tu marca, potenciar tus ventas y hacer crecer tu negocio.</p>
+          <hr>
+        </section>
+        <!-- Contenido Servicios -->
+        <section>
+          <div class="container justify-content-center align-items-center text-center box">
+            <h3>SERVICIOS</h3>
+            <p>Brindamos un asesoramiento integral con el único fin de hacer crecer el negocio de nuestros clientes.</p>
+            <p>Desarrollamos planes que combinan estrategias de comunicación en Redes Sociales, Google, envío de Email
+              marketing, desarrollo de contenidos web y más.</p>
+            <div class="row justify-content-center align-items-center text-center box">
+              <div class="col-sm">
+                <img class="imgScale" src="./assets/images/disenoweb.png" alt="icono_ejemplo">
+                <p><span>DISEÑO WEB</span>
+                <p>
+              </div>
+              <div class="col-sm">
+                <img class="imgScale" src="./assets/images/email.png" alt="icono_ejemplo">
+                <p><span>E-MAIL MARKETING</span></p>
+              </div>
+              <div class="col-sm">
+                <img class="imgScale" src="./assets/images/remarketing.png" alt="icono_ejemplo">
+                <p><span>REMARKETING</span></p>
+              </div>
+              <div class="col-sm">
+                <img class="imgScale" src="./assets/images/community.png" alt="icono_ejemplo">
+                <p><span>COMMUNITY</span></p>
+              </div>
+              <div class="col-sm">
+                <img class="imgScale" src="./assets/images/adds.png" alt="icono_ejemplo">
+                <p><span>GOOGLE ADDS</span></p>
+              </div>
+              <div class="col-sm">
+                <img class="imgScale" src="./assets/images/ecommerce.png" alt="icono_ejemplo">
+                <p><span>E-COMMERCE</span></p>
+              </div>
+            </div>
 
-        <header class="head">
-            <nav class="navbar navbar-dark bg-dark">
-                <div class="container">
-                    <img src="./assets/images/logo_ejemplo.png" alt="Logo de la empresa" height="36">
-                  </a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto">
-                      <li class="nav-item"><a class="nav-link active">Home</a></li>
-                      <li class="nav-item"><a class="nav-link" href="./pages/servicios.html">Servicios</a></li>
-                      <li class="nav-item"><a class="nav-link" href="./pages/equipo.html">Equipo</a></li>
-                      <li class="nav-item"><a class="nav-link" href="./pages/porfolio.html">Porfolio</a></li>
-                      <li class="nav-item"><a class="nav-link" href="./pages/contacto.html">Contacto</a></li>
-                    </ul>
-                  </div>
+          </div>
+        </section>
+        <!-- Contenido Clientes -->
+        <section>
+          <div class="container">
+            <div class="gridContainer justify-content-center align-items-center text-center">
+              <h3>CLIENTES</h3>
+              <div class="col-sm">
+                <img class="grayscale" src="./assets/images/client_Oriflame.png" alt="icono_ejemplo">
+              </div>
+              <div class="col-sm">
+                <img class="grayscale" src="./assets/images/client_Simba.png" alt="icono_ejemplo">
+              </div>
+              <div class="col-sm">
+                <img class="grayscale" src="./assets/images/client_Union_andina.png" alt="icono_ejemplo">
+              </div>
+              <div class="col-sm">
+                <img class="grayscale" src="./assets/images/client_juan_valdez.png" alt="icono_ejemplo">
+              </div>
+              <div class="col-sm">
+                <img class="grayscale" src="./assets/images/cliente_totalplay.png" alt="icono_ejemplo">
+              </div>
+              <div class="col-sm">
+                <img class="grayscale" src="./assets/images/client_mundo-carton.png" alt="icono_ejemplo">
+              </div>
+              <div class="col-sm">
+                <img class="grayscale" src="./assets/images/client_Oikos.png" alt="icono_ejemplo">
+              </div>
+              <div class="col-sm">
+                <img class="grayscale" src="./assets/images/client_promedco.png" alt="icono_ejemplo">
+              </div>
+              <div class="col-sm">
+                <img class="grayscale" src="./assets/images/client_pyp.png" alt="icono_ejemplo">
+              </div>
+              <div class="col-sm">
+                <img class="grayscale" src="./assets/images/client_Recilock.png" alt="icono_ejemplo">
+              </div>
+              <div class="col-sm">
+                <img class="grayscale" src="./assets/images/cliente_softimiza.png" alt="icono_ejemplo">
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Separador -->
+        <div class="container-fluid bannerIndex">
+        </div>
+        <!-- Contenido Contacto -->
+        <section>
+          <div class="row justify-content-center align-items-center text-center text-center box">
+            <div class="col-md-6">
+              <h3>CONTACTATE</h3>
+              <h6>CON NOSOTROS</h6>
+              <img class="imgSize" src="./assets/images/contact_image_index.png">
+            </div>
+            <div class="form-container">
+              <h4 class="heading">DEJANOS TU MENSAJE</h4>
+              <div class="col-md-12">
+                <div class="well well-sm">
+                  <form class="form-horizontal" method="post">
+                    <fieldset>
+                      <div class="form-group">
+                        <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
+                        <div class="col-md-12">
+                          <input id="fname" name="name" type="text" placeholder="Nombre" class="form-control">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <span class="col-md-1 col-md-offset-2 text-center"><i
+                            class="fa fa-phone-square bigicon"></i></span>
+                        <div class="col-md-12">
+                          <input id="phone" name="phone" type="text" placeholder="Telefono" class="form-control">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <span class="col-md-1 col-md-offset-2 text-center"><i
+                            class="fa fa-envelope-o bigicon"></i></span>
+                        <div class="col-md-12">
+                          <input id="email" name="email" type="text" placeholder="Email" class="form-control">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <span class="col-md-1 col-md-offset-2 text-center"><i
+                            class="fa fa-pencil-square-o bigicon"></i></span>
+                        <div class="col-md-12">
+                          <textarea class="form-control" id="message" name="message" placeholder="Escribe tu mensaje"
+                            rows="6"></textarea>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <div class="col-md-12 text-center">
+                          <button type="submit" class="botonSubmit">Enviar</button>
+                        </div>
+                      </div>
+                    </fieldset>
+                  </form>
                 </div>
-              </nav>
-        </header>
-
-        <main class="sector">
-            <div class="animation-box">
-    
-            <section class="rowSector">
-                <div class="contentStrech">
-                    <h1>SIN NOMBRE STUDIO</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vitae luctus dui. Donec sed
-                        commodo
-                        dolor, vitae fringilla elit. Proin imperdiet tellus sapien, vitae fermentum sem tincidunt in.
-                        Nullam
-                        in ex ante. Nunc sed elit libero. Nam convallis venenatis maximus. Integer id massa eu mauris
-                        porta
-                        blandit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;
-                        Donec justo augue, hendrerit ut tellus ut, ornare rhoncus dolor. Duis non quam in libero
-                        molestie
-                        hendrerit sed nec sem. Sed tristique, tortor ac feugiat vulputate, ex ipsum convallis libero,
-                        vel
-                        placerat justo tellus at nibh. Sed eget purus ut augue hendrerit tempor. Pellentesque lacinia
-                        turpis
-                        at viverra bibendum.</p>
-                </div>
-                <img class="imgScale" src="./assets/images/web-design-service-img.gif" alt="Imagen Animada">
-            </section>
-            <section>
-                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-indicators">
-                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                    </div>
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <img src="./assets/images/banner_servicios_ejemplo_1.png" class="d-block w-100" alt="...">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="./assets/images/banner_servicios_ejemplo_2.png" class="d-block w-100" alt="...">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="./assets/images/banner_servicios_ejemplo_3.png" class="d-block w-100" alt="...">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="./assets/images/banner_servicios_ejemplo_4.png" class="d-block w-100" alt="...">
-                      </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Next</span>
-                    </button>
-                  </div>
-            </section>
+              </div>
             </div>
-        </main>
-
-        <footer class="foot">
-            <div class="piePagina">
-                <a href="https://www.instagram.com/"><img class="redScale"
-                        src="./assets/images/icono_instagram_ejemplo.png" alt="Instragam"></a>
-                <a href="https://www.facebook.com/"><img class="redScale"
-                        src="./assets/images/icono_facebook_ejemplo.png" alt="Facebook"></a>
-                <a href="https://twitter.com/"><img class="redScale" src="./assets/images/icono_twitter_ejemplo.png"
-                        alt="Twitter"></a>
-            </div>
-            <div class="piePagina">
-                <p> &copy; Copyright SIN NOMBRE Studio 2022</p>
-            </div>
-        </footer>
-
-    </section>
-
-    <script src="./assets/js/bootstrap.bundle.min.js"></script>
-
+          </div>
+      </div>
+      </div>
+  </section>
+  </div>
+  </main>
+  <!-- Inicio Footer -->
+  <footer class="foot">
+    <div class="container">
+      <div class="row">
+        <!-- Breve Descripcion -->
+        <div class="col-lg-5 col-md-6 footer-info">
+          <h6>METRIKA</h6>
+          <p>Somos una agencia de marketing y comunicación dedicada a crear soluciones
+            integrales e innovadoras para posicionar tu marca, potenciar tus ventas y hacer crecer tu negocio.</p>
+        </div>
+        <!-- Info Contacto -->
+        <div class="col-lg-2 col-md-6 footer-contact">
+          <h6>CONTACTANOS</h6>
+          <p>Santa Fe, Argentina</p>
+          <p>Telefono: +54 342-5107396</p>
+          <p>Email: contacto@metrika.com</p>
+        </div>
+        <!-- Redes -->
+        <div class="col-lg-3 col-md-6 footer-redes">
+          <h6>SEGUINOS</h6>
+          <p></p>
+          <a href="https://www.instagram.com/"><img class="redScale" src="./assets/images/icono_instagram_ejemplo.png"
+              alt="Instragam"></a>
+          <a href="https://www.facebook.com/"><img class="redScale" src="./assets/images/icono_facebook_ejemplo.png"
+              alt="Facebook"></a>
+          <a href="https://twitter.com/"><img class="redScale" src="./assets/images/icono_twitter_ejemplo.png"
+              alt="Twitter"></a>
+          <p></p>
+          <p> &copy; Copyright METRIKA Studio 2022</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Fin Footer -->
+  </section>
+  <script src="./assets/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

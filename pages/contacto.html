@@ -2,93 +2,139 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/93feaf6021.js" crossorigin="anonymous"></script>
-    <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" a href="../assets/css/style.css">
-    <link rel="icon" type="image/png" sizes="16x16"
-        href="//res.cloudinary.com/hdsqazxtw/image/upload/v1558445734/favicon-16x16_glx69e.png">
-    <title>Index</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/93feaf6021.js" crossorigin="anonymous"></script>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" a href="../assets/css/style.css">
+  <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon.png">
+  <title>Contacto</title>
 </head>
 
 <body>
-    <section class="contenedor">
-
-        <header class="head">
-            <nav class="navbar navbar-dark bg-dark">
-                <div class="container">
-                    <img src="../assets/images/logo_ejemplo.png" alt="Logo de la empresa" height="36">
-                  </a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                    
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto">
-                      <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
-                      <li class="nav-item"><a class="nav-link" href="./servicios.html">Servicios</a></li>
-                      <li class="nav-item"><a class="nav-link" href="./equipo.html">Equipo</a></li>
-                      <li class="nav-item"><a class="nav-link" href="./porfolio.html">Porfolio</a></li>
-                      <li class="nav-item"><a class="nav-link active">Contacto</a></li>
-                    </ul>
+  <section class="contenedor">
+    <!-- Inicio Header -->
+    <header class="head">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="../assets/images/logo_ejemplo.png" alt="Logo de la empresa" height="36">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item"><a class="nav-link" href="../index.html">INICIO</a></li>
+              <li class="nav-item"><a class="nav-link" href="./servicios.html">SERVICIOS</a></li>
+              <li class="nav-item"><a class="nav-link" href="./equipo.html">EQUIPO</a></li>
+              <li class="nav-item"><a class="nav-link" href="./porfolio.html">PORFOLIO</a></li>
+              <li class="nav-item"><a class="nav-link active" aria-current="page">CONTACTO</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Fin Header -->
+    <main class="sector">
+      <!-- Titulo Pagina -->
+      <section class="sectionTitle">
+        <div class="animation-box">
+          <h2 class="textwhite"><span class="textblack">HOLA,</span> DEJANOS TU</h2>
+          <h2 class="textblack">MENSAJE !</h2>
+        </div>
+      </section>
+      <!-- -->
+      <section class="rowSector">
+        <!-- Google Maps -->
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.715525143097!2d-58.4344612848398!3d-34.586063980464196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc945173b3dd7%3A0xe8a347bb55df550c!2sCoderhouse!5e0!3m2!1ses-419!2sar!4v1647912364889!5m2!1ses-419!2sar"
+          width="550" height="650" allowfullscreen="" loading="lazy"></iframe>
+        <!-- Formulario Contacto -->
+        <div class="form-container">
+          <h3 class="heading">DEJANOS TU MENSAJE</h3>
+          <h6>A LA BREVEDAD NOS PONDREMOS EN CONTACTO CON VOS</h6>
+          <div class="col-md-12">
+            <div class="well well-sm">
+              <form class="form-horizontal" method="post">
+                <fieldset>
+                  <div class="form-group">
+                    <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
+                    <div class="col-md-12">
+                      <input id="fname" name="name" type="text" placeholder="Nombre" class="form-control">
+                    </div>
                   </div>
-                </div>
-              </nav>
-        </header>
-
-        <main class="sector">
-
-            <h1 class="animation-box">CONTACTO</h1>
-            <section class="rowSector">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.715525143097!2d-58.4344612848398!3d-34.586063980464196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc945173b3dd7%3A0xe8a347bb55df550c!2sCoderhouse!5e0!3m2!1ses-419!2sar!4v1647912364889!5m2!1ses-419!2sar"
-                    width="550" height="350" allowfullscreen="" loading="lazy"></iframe>
-                <!-- si, use la ubicacion de coderhouse solo para el ejemplo :)-->
-                <form class="animation-box" action="" method="get">
-                    <div>
-                        <h2>LOREM IPSUM</h2>
-                        <p>Lorem ipsum dolor sit amet. Ut culpa error qui sint odit qui consectetur quo dolore quos
-                            neque suscipit et
-                            quod sunt eum perferendis maxime.</p>
+                  <div class="form-group">
+                    <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-phone-square bigicon"></i></span>
+                    <div class="col-md-12">
+                      <input id="phone" name="phone" type="text" placeholder="Telefono" class="form-control">
                     </div>
-                    <div>
-                        <label for="nombre">Nombre:</label>
-                        <input type="text" id="nombre" placeholder="Ingresa tu Nombre" required>
-                    </div>
-                    <div>
-                        <label for="email">Email:</label>
-                        <input type="text" id="email" placeholder="Ingresa tu Email" required>
-                    </div>
-                    <div>
-                        <label for="Mensaje">Mensaje:</label>
-                        <input type="text" id="Mensaje" placeholder="Escribe el mensaje que nos quieres enviar"
-                            required>
-                    </div>
-                    <input type="submit" id="botonenviar" value="Enviar">
-                    </div>
-                </form>
-            </section>
+                  </div>
 
-        </main>
+                  <div class="form-group">
+                    <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-envelope-o bigicon"></i></span>
+                    <div class="col-md-12">
+                      <input id="email" name="email" type="text" placeholder="Email" class="form-control">
+                    </div>
+                  </div>
 
-        <footer class="foot">
-            <div class="piePagina">
-                <a href="https://www.instagram.com/"><img class="redScale"
-                        src="../assets/images/icono_instagram_ejemplo.png" alt="Instragam"></a>
-                <a href="https://www.facebook.com/"><img class="redScale"
-                        src="../assets/images/icono_facebook_ejemplo.png" alt="Facebook"></a>
-                <a href="https://twitter.com/"><img class="redScale" src="../assets/images/icono_twitter_ejemplo.png"
-                        alt="Twitter"></a>
-            </div>
-            <div class="piePagina">
-                <p> &copy; Copyright SIN NOMBRE Studio 2022</p>
-            </div>
-        </footer>
+                  <div class="form-group">
+                    <span class="col-md-1 col-md-offset-2 text-center"><i
+                        class="fa fa-pencil-square-o bigicon"></i></span>
+                    <div class="col-md-12">
+                      <textarea class="form-control" id="message" name="message" placeholder="Escribe tu mensaje"
+                        rows="6"></textarea>
+                    </div>
+                  </div>
 
-    </section>
-    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+                  <div class="form-group">
+                    <div class="col-md-12 text-center">
+                      <button type="submit" class="botonSubmit">Enviar</button>
+                    </div>
+                  </div>
+                </fieldset>
+              </form>
+      </section>
+    </main>
+    <!-- Inicio Footer -->
+    <footer class="foot">
+      <div class="container">
+        <div class="row">
+          <!-- Breve Descripcion -->
+          <div class="col-lg-5 col-md-6 footer-info">
+            <h6>METRIKA</h6>
+            <p>Somos una agencia de marketing y comunicación dedicada a crear soluciones
+              integrales e innovadoras para posicionar tu marca, potenciar tus ventas y hacer crecer tu negocio.</p>
+          </div>
+          <!-- Info Contacto -->
+          <div class="col-lg-2 col-md-6 footer-contact">
+            <h6>CONTACTANOS</h6>
+            <p>Santa Fe, Argentina</p>
+            <p>Telefono: +54 342-5107396</p>
+            <p>Email: contacto@metrika.com</p>
+          </div>
+          <!-- Redes -->
+          <div class="col-lg-3 col-md-6 footer-redes">
+            <h6>SEGUINOS</h6>
+            <p></p>
+            <a href="https://www.instagram.com/"><img class="redScale"
+                src="../assets/images/icono_instagram_ejemplo.png" alt="Instragam"></a>
+            <a href="https://www.facebook.com/"><img class="redScale" src="../assets/images/icono_facebook_ejemplo.png"
+                alt="Facebook"></a>
+            <a href="https://twitter.com/"><img class="redScale" src="../assets/images/icono_twitter_ejemplo.png"
+                alt="Twitter"></a>
+            <p></p>
+            <p> &copy; Copyright METRIKA Studio 2022</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Fin Footer -->
+  </section>
+  <script src="../assets/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
