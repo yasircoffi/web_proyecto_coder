@@ -1,0 +1,395 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import 'variables';
+* {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+
+    ul,
+    li {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@font-face {
+    font-family: "Bogart";
+    src: url('../fonts/Bogart-Extrabold.ttf');
+}
+
+a {
+    color: $color-2;
+    text-decoration: none;
+}
+
+.contenedor {
+    display: grid;
+    width: 100%;
+
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto auto;
+
+    grid-template-areas: "header   header"
+        "sec     sec"
+        "footer   footer";
+
+    div {
+        color: $color-2;
+    }
+
+}
+
+.head {
+    grid-area: header;
+}
+
+.sector {
+    background-image: $background-page;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    grid-area: sec;
+}
+
+.foot {
+    background: linear-gradient(to right, #000000, #1c0a1c);
+    font-size: small;
+    font-weight: 400;
+    color: $color-2;
+    padding: 1rem;
+    grid-area: footer;
+}
+
+.navbar {
+    background: linear-gradient(to right, #000000, #1c0a1c);
+}
+
+.sectionTitle {
+    display: flex;
+    padding-bottom: 12rem;
+    color: transparent;
+}
+
+.centerContent {
+    display: grid;
+    text-align: center;
+}
+
+.rowSector {
+    display: flex;
+    flex-wrap: row;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.gridContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto auto auto auto;
+    gap: 2px;
+    justify-items: center;
+    justify-content: center;
+    width: auto;
+    height: auto;
+    grid-row-gap: 2rem;
+    padding-top: 1rem;
+}
+
+.gridContent {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    gap: 2px;
+    width: auto;
+    height: auto;
+}
+
+.gridSector {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    height: 300px;
+    width: 300px;
+    overflow: hidden;
+    border-radius: 25px;
+    margin: 1em;
+}
+
+.gridContainer-animation {
+    transition: ease-in-out 1.5s;
+
+    &:hover {
+        transform: scale(1.2) translateY(10px);
+    }
+}
+
+.piePagina {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    padding: 2px;
+}
+
+/*Estilos de Texto*/
+
+main {
+    padding: 4%;
+
+    h1 {
+        color: $color-1;
+        font-weight: 500;
+        padding: 6px;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    h2 {
+        font-family: $font-custom;
+        font-size: 350%;
+        color: $color-1;
+    }
+
+    h3 {
+        font-family: $font-custom;
+        font-size: 250%;
+        color: $color-1;
+    }
+
+    h4 {
+        color: $color-1;
+        font-weight: 500;
+        padding: 6px;
+    }
+
+    h5 {
+        color: $color-1;
+        font-weight: 400;
+        padding: 6px;
+    }
+
+    h6 {
+        color: $color-3;
+        font-family: $font-custom;
+        margin-top: -22px;
+        margin-right: -20px;
+    }
+
+    p {
+        color: rgb(43, 44, 44);
+        font-weight: 400;
+        margin-top: 10px;
+    }
+
+    span {
+        font-family: $font-custom;
+    }
+}
+
+.underTitle {
+    color: $color-3;
+    font-family: $font-custom;
+    margin-bottom: -10px;
+    margin-left: -10px;
+}
+
+.textblack {
+    color: $color-1;
+}
+
+.textwhite {
+    color: $color-2;
+}
+
+hr {
+    padding-top: 5px;
+    padding-bottom: 10px;
+    border: 0;
+    border-top: 2px solid $color-2;
+    border-bottom: 0px solid #000;
+}
+
+.bannerIndex {
+    background-color: $color-3;
+    height: 2rem;
+}
+
+.bannerPartner {
+    background-image: $background-banner;
+    background-color: transparent;
+}
+
+.contentStrech {
+    margin-right: 2rem;
+    max-width: 80%;
+}
+
+/*Estilos de Imagenes*/
+
+.imgLamp {
+    height: 20%;
+    width: 20%;
+}
+
+.imgSize {
+    height: 100%;
+    width: 100%;
+}
+
+.imgScale {
+    height: 40px;
+    width: 45px;
+}
+
+.imgPartner {
+    height: 157px;
+    width: 233px;
+    padding: 10px 10px 10px 10px;
+    border-radius: $border-radius-unit;
+}
+
+.redScale {
+    margin-left: 6px;
+    margin-right: 6px;
+    height: 30px;
+    width: 30px;
+
+    &:hover {
+        -webkit-filter: invert(1);
+        filter: invert(1);
+    }
+}
+
+/*Estilos de Imagenes Porfolio*/
+
+.animation-box {
+    animation: slide-up 0.9s cubic-bezier(0.65, 0, 0.35, 1)
+}
+
+@keyframes slide-up {
+    0% {
+        transform: translateY(100px);
+        opacity: 0.1;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/*Estilos de Imagenes Clientes*/
+
+.grayscale {
+    -webkit-filter: grayscale(100%);
+    -webkit-transition: all .6s ease;
+    -webkit-backface-visibility: hidden;
+    width: 80%;
+
+    &:hover {
+        filter: none;
+        -webkit-filter: grayscale(0%);
+        width: 90%;
+    }
+}
+
+.form-container {
+    width: 450px;
+    padding: 3rem;
+    background-color: $color-2;
+    box-shadow: 0 0 5rem rgba(0, 0, 0, .2);
+}
+
+.form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    padding: 2rem;
+    background-color: $color-2;
+    box-shadow: 0 0 5rem rgba(0, 0, 0, .2);
+}
+
+
+.botonSubmit {
+    width: 50%;
+    height: 35px;
+    background-color: $color-3;
+    text-decoration: none;
+    font-size: 1rem;
+    color: $color-2;
+    border: none;
+    border-radius: $border-radius-unit;
+    outline: none;
+    margin-top: 2rem;
+}
+
+/*Media Queries*/
+
+@media only screen and (min-width: 320px) and (max-width: 844px) and (orientation: portrait) {
+
+    .contenedor {
+        grid-template-rows: auto auto auto;
+    }
+
+    .gridContainer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .gridSector {
+        height: 150px;
+        width: 150px;
+    }
+
+    .rowSector {
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        align-items: center;
+    }
+
+    main h2 {
+        font-size: 300%;
+    }
+
+    iframe {
+        width: 100%;
+        height: 400px;
+    }
+
+    form {
+        width: 100%;
+        height: 400px;
+        padding: auto;
+        border-radius: $border-radius-unit;
+        margin: auto;
+        background-color: $color-2;
+        margin-top: 1rem;
+    }
+
+    .contentStrech {
+        margin-right: 0rem;
+        max-width: auto;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .imgLamp {
+        height: 200px;
+        width: 200px;
+    }
+
+}
