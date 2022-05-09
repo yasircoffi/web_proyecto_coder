@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import 'variables';
+
 * {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
@@ -17,15 +18,27 @@
     }
 }
 
+a {
+    color: $color-2;
+    text-decoration: none;
+}
+
 @font-face {
     font-family: "Bogart";
     src: url('../fonts/Bogart-Extrabold.ttf');
 }
 
-a {
-    color: $color-2;
-    text-decoration: none;
-}
+/*Maps*/
+
+$estilosTexto: (
+    negro: $color-1,
+    blanco: $color-2,
+    amarillo: $color-3,
+    centrar: center,
+    relleno: 4px,
+    tipografia: $font-custom,
+    grosor: 400,
+);
 
 .contenedor {
     display: grid;
@@ -43,6 +56,8 @@ a {
     }
 
 }
+
+/*Declaración de las tres areas de contenedor*/
 
 .head {
     grid-area: header;
@@ -143,68 +158,68 @@ main {
     padding: 4%;
 
     h1 {
-        color: $color-1;
-        font-weight: 500;
-        padding: 6px;
-        text-align: center;
-        padding: 1rem;
+        color: map-get($estilosTexto, negro);
+        font-family: map-get($estilosTexto, tipografia);
+        font-weight: map-get($estilosTexto, grosor);
+        text-align: map-get($estilosTexto, centrar);
+        padding: map-get($estilosTexto, relleno);
     }
 
     h2 {
-        font-family: $font-custom;
+        color: map-get($estilosTexto, negro);
+        font-family: map-get($estilosTexto, tipografia);
         font-size: 350%;
-        color: $color-1;
     }
 
     h3 {
-        font-family: $font-custom;
+        color: map-get($estilosTexto, negro);
+        font-family: map-get($estilosTexto, tipografia);
         font-size: 250%;
-        color: $color-1;
     }
 
     h4 {
-        color: $color-1;
-        font-weight: 500;
-        padding: 6px;
+        color: map-get($estilosTexto, negro);
+        font-weight: map-get($estilosTexto, grosor);
+        padding: map-get($estilosTexto, relleno);
     }
 
     h5 {
-        color: $color-1;
-        font-weight: 400;
-        padding: 6px;
+        color: map-get($estilosTexto, negro);
+        font-weight: map-get($estilosTexto, grosor);
+        padding: map-get($estilosTexto, relleno);
     }
 
     h6 {
-        color: $color-3;
-        font-family: $font-custom;
+        color: map-get($estilosTexto, amarillo);
+        font-family: map-get($estilosTexto, tipografia);
         margin-top: -22px;
         margin-right: -20px;
     }
 
     p {
-        color: rgb(43, 44, 44);
-        font-weight: 400;
+        color: map-get($estilosTexto, negro);
+        font-weight: map-get($estilosTexto, grosor);
         margin-top: 10px;
     }
 
     span {
-        font-family: $font-custom;
+        font-family: map-get($estilosTexto, tipografia);
     }
 }
 
 .underTitle {
-    color: $color-3;
-    font-family: $font-custom;
+    color: map-get($estilosTexto, amarillo);
+    font-family: map-get($estilosTexto, tipografia);
     margin-bottom: -10px;
     margin-left: -10px;
 }
 
 .textblack {
-    color: $color-1;
+    color: map-get($estilosTexto, negro);
 }
 
 .textwhite {
-    color: $color-2;
+    color: map-get($estilosTexto, blanco);
 }
 
 hr {
@@ -215,9 +230,11 @@ hr {
     border-bottom: 0px solid #000;
 }
 
+/*Estilos para Sección de Banner Google/Meta*/
+
 .bannerIndex {
     background-color: $color-3;
-    height: 2rem;
+    height: 1rem;
 }
 
 .bannerPartner {
@@ -232,33 +249,33 @@ hr {
 
 /*Estilos de Imagenes*/
 
+@mixin sizes ($w, $h) { 
+    height: $h;
+    width: $w;
+}
+
 .imgLamp {
-    height: 20%;
-    width: 20%;
+    @include sizes( 20%, 20%);
 }
 
 .imgSize {
-    height: 100%;
-    width: 100%;
+    @include sizes( 100%, 100%);
 }
 
 .imgScale {
-    height: 40px;
-    width: 45px;
+    @include sizes( 40px, 45px);
 }
 
 .imgPartner {
-    height: 157px;
-    width: 233px;
+    @include sizes( 157px, 233px);
     padding: 10px 10px 10px 10px;
     border-radius: $border-radius-unit;
 }
 
 .redScale {
+    @include sizes( 30px, 30px);
     margin-left: 6px;
     margin-right: 6px;
-    height: 30px;
-    width: 30px;
 
     &:hover {
         -webkit-filter: invert(1);
@@ -299,6 +316,8 @@ hr {
     }
 }
 
+/*Estilos Formulario*/
+
 .form-container {
     width: 450px;
     padding: 3rem;
@@ -314,13 +333,6 @@ hr {
     align-items: center;
 }
 
-.box {
-    padding: 2rem;
-    background-color: $color-2;
-    box-shadow: 0 0 5rem rgba(0, 0, 0, .2);
-}
-
-
 .botonSubmit {
     width: 50%;
     height: 35px;
@@ -332,6 +344,23 @@ hr {
     border-radius: $border-radius-unit;
     outline: none;
     margin-top: 2rem;
+}
+
+/*Estilos Cajas*/
+
+.box {
+    padding: 2rem;
+    background-color: $color-2;
+    box-shadow: 0 0 5rem rgba(0, 0, 0, .2);
+}
+
+.box--yellow {
+    @extend.box;
+    background-color: $color-3;  
+    border-radius: $border-radius-unit;
+    padding:0;
+    margin-left: 4px;
+    margin-right: 4px;
 }
 
 /*Media Queries*/
