@@ -112,7 +112,7 @@ $estilosTexto: (
     justify-content: center;
     width: auto;
     height: auto;
-    grid-row-gap: 2rem;
+    grid-row-gap: 1rem;
     padding-top: 1rem;
 }
 
@@ -222,6 +222,10 @@ main {
     color: map-get($estilosTexto, blanco);
 }
 
+.textyellow {
+    color: map-get($estilosTexto, amarillo);
+}
+
 hr {
     padding-top: 5px;
     padding-bottom: 10px;
@@ -229,6 +233,12 @@ hr {
     border-top: 2px solid $color-2;
     border-bottom: 0px solid #000;
 }
+
+.ml2 {
+    font-weight: 900;
+    font-size: 3.5em;
+  }
+  
 
 /*Estilos para Sección de Banner Google/Meta*/
 
@@ -263,11 +273,11 @@ hr {
 }
 
 .imgScale {
-    @include sizes( 40px, 45px);
+    @include sizes( 45px, 40px);
 }
 
 .imgPartner {
-    @include sizes( 157px, 233px);
+    @include sizes( 223px, 147px);
     padding: 10px 10px 10px 10px;
     border-radius: $border-radius-unit;
 }
@@ -364,6 +374,14 @@ hr {
 }
 
 /*Media Queries*/
+@media only screen and (min-width: 844px) and (max-width: 1520px) and (orientation: portrait) {
+
+    .gridContainer {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+
+}
 
 @media only screen and (min-width: 320px) and (max-width: 844px) and (orientation: portrait) {
 
@@ -376,8 +394,8 @@ hr {
     }
 
     .gridSector {
-        height: 150px;
-        width: 150px;
+        height: 250px;
+        width: 250px;
     }
 
     .rowSector {
@@ -422,3 +440,4 @@ hr {
     }
 
 }
+
